@@ -50,17 +50,17 @@ ESP32 5V       ──── VCC (Relay module)
 ```
 CN02 (Căn bản 1):
   [Cảm biến đất] ──┐
-  [DHT11]         ──┼── ESP32 ── MQTT ── Backend ── Frontend
+  [DHT11]         ──┼── ESP32 ── MQTT ── Backend ── Node-RED Dashboard
 
 CN03 (Căn bản 2):
-  Frontend ── Backend ── MQTT ── ESP32 ── [Relay Bơm/Quạt]
+  Node-RED ── Backend ── MQTT ── ESP32 ── [Relay Bơm/Quạt]
 
 CN04 (Nâng cao 1 - Local):
   [Cảm biến đất] ── ESP32 ── [Máy bơm]  (không qua Internet)
 
 CN07 (Nâng cao 2):
-  [Cảm biến] ── ESP32 ── MQTT ── Backend ── Frontend (Toast)
+  [Cảm biến] ── ESP32 ── MQTT ── Backend ── Node-RED (cảnh báo)
 
 CN08 (Nâng cao 3):
-  Frontend ── Backend ── MQTT ── ESP32 ── [Bơm/Quạt theo ngưỡng mới]
+  Node-RED ── Backend ── MQTT ── ESP32 ── [Bơm/Quạt theo ngưỡng mới]
 ```
